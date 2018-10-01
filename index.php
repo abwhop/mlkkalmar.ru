@@ -24,7 +24,7 @@ $app->any('[/{params:.*}]', function (Request $request, Response $response, arra
     
     for($i=0;$i<count($path);$i++){ if(trim($path[$i]) == "") 	unset($path[$i]);	}
     
-    $dbh = new PDO("pgsql:dbname=ets_logistic;host=192.168.2.100", "postgres", "deytrin21"); 
+    $dbh = new PDO("pgsql:dbname=ets_logistic;host=192.168.2.100", "postgres", "system"); 
     
         
     $parent_item_id = null;
