@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<title></title>
+<!--<script src="lib/jquery-3.3.1.min.js"></script> -->
+<!--<script src="modules.js"></script>-->
+<script src="https://api-maps.yandex.ru/2.1/?load=Map&lang=ru_RU"
+ type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(function () {  
+    var map = new ymaps.Map("map", {
+          center: [55.76, 37.64], 
+          zoom: 10
+        });
+
+    if (map) {
+      ymaps.modules.require('Placemark', 'Circle', 
+      
+      function (Placemark, Circle) {
+        var placemark = new Placemark([55.37, 35.45]);
+      });
+    }
+  });
+</script>
+
+
+</head>
+<body>
+  <!--
+	<input type="button" onclick="Modules.load('one'); Modules.load('two');" value="Load"/><tt>
+	<input type="button" onclick="Modules.unload(1);" value="Unload"/><tt>
+	<input type="button" onclick="al();" value="Al"/>
+  -->
+
+</body>
+
+
+
+
+
+
+</html>

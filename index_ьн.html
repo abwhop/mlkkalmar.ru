@@ -1,0 +1,107 @@
+<html>
+
+<head>
+<title></title>
+<script src="lib/jquery-3.3.1.min.js"></script>
+
+<script>
+
+function Module(){
+	this._listeners = {};
+
+	this.init = function(){
+
+	};
+
+	this._remListeners = function(){
+		for(var evName in this._listeners){
+			this._listeners[evName].evObject.removeEventListener(evName,this._listeners[evName].callback);
+		}
+			};
+
+	this.addListen =  function(evName,callback,evObject){
+
+		if(!evObject) evObject = document;
+
+		evObject.addEventListener(evName, callback, false);
+
+		this._listeners[evName] = {"evObject": evObject,"callback": callback	};
+	};
+
+	this.destroy =  function(){
+
+		this._remListeners();
+
+
+
+		//document.removeEventListener("hello", hello);
+
+
+
+		console.log("Unloaded");
+		//delete this;
+	};
+
+
+}
+
+
+
+var Modules = {
+	loaded: {},
+	id: 0,
+	load: function(){},
+	unload: function(id){
+
+		//console.log(this.loaded[module_name]);
+		this.loaded[id].destroy();
+		//this.loaded[module_name] = null;
+		delete this.loaded[id];
+		//console.log(this.loaded[module_name]);
+	}
+};
+
+
+	Modules.load = function(module_name){
+
+			var self = this;
+
+			$.getScript( "scripts/test.js", function( data, textStatus, jqxhr ) {
+
+			self._module_name = module_name;
+			self.loaded[self.id].module_name = module_name;
+			self.loaded[self.id].init();
+			self.id++;
+
+			});
+
+	};
+
+	//Modules.load("one");
+
+
+function al(){
+
+  document.dispatchEvent( new CustomEvent("hello", { detail: { name: "Vasya" }}) );
+
+  }
+
+
+</script>
+
+</head>
+<body>
+
+	<input type="button" onclick="Modules.load('one'); Modules.load('two');" value="Load"/><tt>
+	<input type="button" onclick="Modules.unload(1);" value="Unload"/><tt>
+	<input type="button" onclick="al();" value="Al"/>
+
+
+</body>
+
+
+
+
+
+
+</html>

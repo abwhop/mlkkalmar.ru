@@ -1,0 +1,15 @@
+ОШИБКА:  столбец "structute" не существует
+LINE 1: select object_name,structute,params  from ui_objects
+                           ^
+HINT:  Возможно, предполагалась ссылка на столбец "ui_objects.structure".	select object_name,structute,params  from ui_objects - pgsqlОШИБКА:  отношение "logistors_view" не существует
+LINE 1: select logistor_color,contragent_name  from logistors_view
+                                                    ^	select logistor_color,contragent_name  from logistors_view - pgsqlОШИБКА:  отношение "logistors_view" не существует
+LINE 1: select logistor_color,contragent_name  from logistors_view
+                                                    ^	select logistor_color,contragent_name  from logistors_view - pgsql__________________________________________________________________
+23.04.2018 10:16:01 - [ОШИБКА:  отношение "logistors_color_list" не существует
+LINE 1: select logistor_color,contragent_name  from logistors_color_...
+                                                    ^] select logistor_color,contragent_name  from logistors_color_list - pgsql
+__________________________________________________________________
+23.04.2018 10:16:02 - [ОШИБКА:  отношение "logistors_color_list" не существует
+LINE 1: select logistor_color,contragent_name  from logistors_color_...
+                                                    ^] select logistor_color,contragent_name  from logistors_color_list - pgsql

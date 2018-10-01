@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Создано Microsoft Visio 11.0, Экспорт SVG, версия 1.0 rub.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="0.728661in"
+		height="0.884699in" viewBox="0 0 52.4636 63.6983" xml:space="preserve" color-interpolation-filters="sRGB" class="st3">
+	<v:documentProperties v:langID="1049" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st2 {fill:#000000;font-family:Arial;font-size:4.99999em}
+		.st3 {fill:none;fill-rule:evenodd;font-size:12;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Page-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(0.72,-11.9547)">
+			<title>Квадрат</title>
+			<desc>₽</desc>
+			<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197" v:verticalAlign="2"/>
+			<v:textRect cx="25.5118" cy="38.1865" width="51.03" height="51.0236"/>
+			<rect x="0" y="12.6747" width="51.0236" height="51.0236" class="st1"/>
+			<text x="8.83" y="62.2" class="st2" v:langID="1033"><v:paragraph v:spLine="0.0833333" v:horizAlign="1"/><v:tabList/>₽</text>		</g>
+	</g>
+</svg>
